@@ -7,6 +7,7 @@
     --backraund-usteam: #F5F4FA;
     --icon: #AFB1B8;
     --bord: #ECECEC;
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* King tags */
@@ -217,12 +218,19 @@ img {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top: 30px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
 }
 
 .hero-button:focus,
 .hero-button:hover {
+
     background-color: var(--hero-white);
     color: var(--bacraund-color-button);
+
+    
 }
 /*  /Hero button  */
 
