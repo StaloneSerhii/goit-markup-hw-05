@@ -108,6 +108,7 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     gap: 50px;
+
 }
 
 .heder-list-con {
@@ -123,10 +124,49 @@ img {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+
+    position: relative;
+
+    overflow: hidden;
 }
 
 .active {
     color: var(--bacraund-color-button);
+    position: relative;
+
+}
+
+.active::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: var(--bacraund-color-button);
+    border-radius: 2px;
+
+    left: 0px;
+    bottom: 0px;
+    outline: 2px tomato;
+}
+
+.link::after  {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--bacraund-color-button);
+
+    border-radius: 2px;
+    bottom: 0px;
+
+    transform: translateY(10px);
+    transition: transform 250ms var(--cubic);
+
+}
+
+.link:hover::after {
+    transform: translateY(0px);
 }
 
 /* hover contacts */
@@ -335,7 +375,42 @@ img {
     margin-bottom: 50px;
 }
 
+.us-work-animation p {
 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-white);
+
+}
+
+
+.us-work-animation {
+    outline: 2px solid green;
+    content: '';
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background-color: var(--brand-color);
+
+    left: 0;
+    bottom: 0;
+    transform: translateY(100px);
+    transition: transform 250ms var(--cubic);
+}
+
+.us-animation:hover {
+    outline: 10px solid green;
+    transform: translateY(0px);
+
+}
+
+.us-animation {
+    position: relative;
+}
 
 .img-work {
     display: flex;
