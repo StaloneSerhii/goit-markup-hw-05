@@ -127,6 +127,7 @@ img {
     line-height: 16px;
     letter-spacing: 0.02em;
 
+    transition: box-shadow 250ms var(--cubic);
 }
 
 .link {
@@ -614,10 +615,6 @@ img {
     
 }
 
-.addres-ul {
-    
-    
-}
 
 .addres-ul :hover {
     color: var(--bacraund-color-button);
