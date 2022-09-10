@@ -486,8 +486,14 @@ img {
 .icon-delp {
     color: var(--hero-white);
 
-
-    z-index: 11111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: relative;
+    transition: background-color 250ms var(--cubic);
 
 }
 
@@ -501,15 +507,10 @@ img {
 
 
 .icon-li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     width: 44px;
     height: 44px;
-    border-radius: 50%;
-    position: relative;
 
-    transition: background-color 250ms var(--cubic);
 
 }
 
