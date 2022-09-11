@@ -64,6 +64,10 @@ img {
 
 /* LogoTipe (logo span) */
 
+.border {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .logo {
     color: #000;
     font-family: 'Raleway';
@@ -420,12 +424,12 @@ img {
 
     left: 0;
     bottom: 0;
-    transform: translateY(100px);
+    transform: translateY(0px);
     transition: transform 250ms var(--cubic);
 }
 
 .us-animation:hover .us-work-animation {
-    transform: translateY(0px);
+    transform: translateY(-225px);
 
 }
 
@@ -520,7 +524,6 @@ img {
 .icon-li:hover {
     background-color: var(--bacraund-color-button);
     border-radius: 50%;
-    transition: background-color 250ms var(--cubic), border 250ms var(--cubic);
 } 
 
 
